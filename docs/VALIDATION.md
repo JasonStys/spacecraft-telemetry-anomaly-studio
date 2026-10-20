@@ -1,6 +1,6 @@
 # Validation strategy and observed evidence
 
-By Jason Stys. Local results recorded2026-10-20; CI run results are added only after actual execution.
+By Jason Stys. Local results recorded2026-10-20. The [published CI baseline](reports/CI_BASELINE.md) records actual completed runs; final exact-source checks also gate the portable release.
 
 ## Local results
 

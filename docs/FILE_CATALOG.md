@@ -21,6 +21,7 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `docs/VALIDATION.md` — # Validation strategy and observed evidence
 - `docs/images/inspector.jpg` — Binary screenshot asset from local application validation
 - `docs/images/overview.jpg` — Binary screenshot asset from local application validation
+- `docs/reports/CI_BASELINE.md` — # First published CI evidence
 - `docs/reports/benchmark.json` — Reviewed synthetic detector benchmark summaries and deterministic evidence hashes.
 - `examples/slow-drift.csv` — tick,mode,thermal,bus,load
 - `launcher.py` — """Portable application entry point by Jason Stys; main and argv: docs/CODE_INDEX.md.

@@ -80,4 +80,5 @@ def test_parser_fuzz(payload):
         result = read_csv(payload)
         assert len(result) in (240, 480)
     except ValueError:
-        pass
+        # Controlled rejection is an expected parser-fuzz outcome; other exceptions must fail.
+        return
