@@ -1,0 +1,275 @@
+<!-- Telemetry analysis interface by Jason Stys. Sections: configuration, signal, evaluation, ledger, help.
+     Structural IDs, variables and source lines: docs/CODE_INDEX.md. All assets and computation local. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Explainable synthetic spacecraft telemetry anomaly analysis by Jason Stys."
+    />
+    <title>Spacecraft Telemetry Anomaly Studio · Jason Stys</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to analysis</a>
+    <header>
+      <a class="brand" href="#main"
+        ><span class="brand-mark">≋</span> TELEMETRY<span class="brand-sub">
+          / ANOMALY STUDIO</span
+        ></a
+      >
+      <nav aria-label="Main">
+        <a href="#evaluation">Evaluation</a><a href="#help">Field guide</a
+        ><a
+          href="https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio"
+          target="_blank"
+          rel="noreferrer"
+          >Source ↗</a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="intro">
+        <div>
+          <p class="eyebrow">SPACE SYSTEMS / DATA ASSURANCE / LOCAL LAB</p>
+          <h1>Separate signal<br />from <em>surprise.</em></h1>
+          <p class="description">
+            Explore context-aware telemetry limits. Follow the evidence from a suspicious reading to
+            an explainable alert.
+          </p>
+        </div>
+        <div class="principle">
+          <span>01</span>
+          <h2>Train on the past.<br />Evaluate on the unseen.</h2>
+          <p>
+            80 training ticks. Frozen robust limits. Causal drift and flatline checks. No evaluation
+            labels in the detector.
+          </p>
+          <div class="scope">SYNTHETIC DATA · NOT AN OPERATIONAL FLIGHT TOOL</div>
+        </div>
+      </section>
+      <div class="workspace">
+        <aside class="panel controls">
+          <p class="eyebrow">EXPERIMENT CONFIGURATION</p>
+          <form id="config">
+            <label>Scenario<select id="scenario" name="scenario"></select></label>
+            <p id="scenario-description" class="small">Loading scenarios…</p>
+            <div class="pair">
+              <label>Duration / ticks<select id="duration" name="duration"></select></label
+              ><label>Inject at / tick<select id="fault_tick" name="fault_tick"></select></label>
+            </div>
+            <label>Generator seed<select id="seed" name="seed"></select></label
+            ><label>Limit multiplier<select id="threshold" name="threshold"></select></label
+            ><label>Baseline strategy<select id="contextual" name="contextual"></select></label>
+            <p class="small">
+              Synthetic mode labels are SUNLIT / ECLIPSE. They are context categories, not an
+              orbital or thermal model.
+            </p>
+            <button id="apply" type="submit">Analyze telemetry ↗</button
+            ><button id="reset" type="button" class="secondary">Restore defaults</button>
+          </form>
+          <p class="local-note">
+            ● All analysis stays on this device.<br />No account, cloud model or hardware
+            connection.
+          </p>
+        </aside>
+        <div class="analysis">
+          <p id="status" role="status" aria-label="Analysis status" aria-live="polite">
+            Preparing the local detector…
+          </p>
+          <button id="retry" type="button" hidden>Retry analysis</button>
+          <div id="results" hidden>
+            <section class="panel signal">
+              <div class="section-title">
+                <div>
+                  <p class="eyebrow">01 / SIGNAL INSPECTOR</p>
+                  <h2>One channel. Full context.</h2>
+                </div>
+                <label
+                  >Inspect channel<select id="channel">
+                    <option value="0">Thermal index</option>
+                    <option value="1">Bus index</option>
+                    <option value="2">Load index</option>
+                  </select></label
+                >
+              </div>
+              <div class="legend">
+                <span class="observed">Observation</span><span class="limit">Robust limit</span
+                ><span class="alert">Detector alert</span
+                ><label class="check"
+                  ><input type="checkbox" id="labels" /> Show injected labels</label
+                >
+              </div>
+              <svg
+                id="chart"
+                viewBox="0 0 900 260"
+                role="img"
+                aria-label="Telemetry observations, robust limits and detector alerts; missing values break the line"
+              ></svg>
+              <div class="transport">
+                <label for="tick">Inspect tick <span id="tick-label">120</span></label
+                ><input
+                  type="range"
+                  id="tick"
+                  aria-label="Inspect tick"
+                  min="80"
+                  max="239"
+                  value="120"
+                /><span id="mode">SUNLIT</span>
+              </div>
+              <div class="sample-detail">
+                <div><span>Observation</span><strong id="value">—</strong></div>
+                <div><span>Robust residual</span><strong id="score">—</strong></div>
+                <div><span>Causal drift</span><strong id="drift">—</strong></div>
+                <div><span>Decision</span><strong id="decision">—</strong></div>
+              </div>
+              <p id="explanation" class="explanation"></p>
+              <p class="small">
+                Ticks are logical; values are synthetic indices. Shaded prefix is training-only.
+                Missing data is not zero. Limits are scale multiples, not confidence probabilities.
+              </p>
+            </section>
+            <section id="evaluation" class="panel evaluation">
+              <div class="section-title">
+                <div>
+                  <p class="eyebrow">02 / HELD-OUT EVALUATION</p>
+                  <h2>Count the misses, too.</h2>
+                </div>
+                <span class="tag">CHANNEL-TICK METRICS</span>
+              </div>
+              <div class="metrics">
+                <article>
+                  <h3>Precision</h3>
+                  <strong id="precision">—</strong>
+                </article>
+                <article>
+                  <h3>Recall</h3>
+                  <strong id="recall">—</strong>
+                </article>
+                <article>
+                  <h3>Detection delay</h3>
+                  <strong id="delay">—</strong>
+                </article>
+                <article>
+                  <h3>Missing observations</h3>
+                  <strong id="missing">—</strong>
+                </article>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <caption>
+                    Same observations, alternate baseline strategy
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Strategy</th>
+                      <th scope="col">TP</th>
+                      <th scope="col">FP</th>
+                      <th scope="col">FN</th>
+                      <th scope="col">TN</th>
+                      <th scope="col">F1</th>
+                    </tr>
+                  </thead>
+                  <tbody id="comparison"></tbody>
+                </table>
+              </div>
+              <p class="small">
+                Labels are used only here, after scoring. Missing channel-ticks are excluded from
+                confusion counts. Undefined means no valid denominator—not perfect accuracy.
+                Post-fault drift memory can produce false alarms. These synthetic results do not
+                establish flight performance.
+              </p>
+            </section>
+            <section class="panel ledger">
+              <div class="section-title">
+                <div>
+                  <p class="eyebrow">03 / EVIDENCE LEDGER</p>
+                  <h2>Every flag has a reason.</h2>
+                </div>
+                <label
+                  >Show entries<select id="ledger-filter">
+                    <option value="all">All flags & gaps</option>
+                    <option value="alerts">Detector alerts</option>
+                    <option value="missing">Missing values</option>
+                  </select></label
+                >
+              </div>
+              <ol id="events"></ol>
+              <div class="downloads">
+                <a id="download-json" download="telemetry-evidence.json">JSON report ↓</a
+                ><a id="download-csv" download="telemetry-samples.csv">Evidence CSV ↓</a
+                ><a id="download-html" download="telemetry-evidence.html">HTML report ↓</a
+                ><a id="download-input" download="telemetry-input.csv">Input CSV ↓</a>
+              </div>
+              <details>
+                <summary>Training & provenance</summary>
+                <p>
+                  The prefix is assumed clean. Median/MAD bands are fitted separately by channel
+                  and, optionally, context. Context changes and missing values reset temporal
+                  memory. Model limits never update from the evaluation set.
+                </p>
+                <pre id="provenance"></pre>
+              </details>
+            </section>
+          </div>
+        </div>
+      </div>
+      <section id="help" class="help">
+        <p class="eyebrow">FIELD GUIDE / KNOW THE BOUNDARY</p>
+        <h2>Understand the alert before acting.</h2>
+        <div class="help-grid">
+          <details open>
+            <summary>Start with a controlled surprise</summary>
+            <p>
+              Run isolated spike, inspect tick120 and the thermal channel, then compare with slow
+              drift or stuck sensor. Select the bus channel for partial dropout: absent readings are
+              marked missing, never healthy zeros. Changing configuration requires Analyze
+              telemetry; downloads always belong to the last completed run.
+            </p>
+          </details>
+          <details>
+            <summary>What the rules mean</summary>
+            <p>
+              Point-limit flags a residual beyond the chosen median/MAD band. Drift uses causal EWMA
+              with weight0.2 and threshold0.6 times the limit multiplier. Flatline requires six
+              exactly equal consecutive readings in one context. These are explainable heuristics,
+              not a trained neural network or failure diagnosis.
+            </p>
+          </details>
+          <details>
+            <summary>Analyze a local CSV</summary>
+            <p>
+              Download Input CSV for the strict schema. The CLI accepts only UTF-8 CSV with
+              tick,mode,thermal,bus,load columns,240 or480 ordered rows and bounded finite numeric
+              values; blanks mean missing. Use export --input file.csv --output report.json. Labels
+              are unknown for imports, so accuracy metrics stay undefined. No browser upload
+              endpoint exists.
+            </p>
+          </details>
+          <details>
+            <summary>Privacy, limits & support</summary>
+            <p>
+              No analytics, accounts, advertisements or external AI calls. Only finite preferences
+              use optional browser storage. Data cannot control a spacecraft. Desktop bundles run
+              locally; they are unsigned. Do not disable OS protections. Read the repository docs or
+              contact the author for help.
+            </p>
+            <a href="https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/releases"
+              >Portable downloads ↗</a
+            >
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span
+        >DESIGNED & ENGINEERED BY
+        <a href="https://github.com/JasonStys" target="_blank" rel="noreferrer"
+          >Jason Stys ↗</a
+        ></span
+      ><span>MIT / OFFLINE-FIRST / v1.0.0</span>
+    </footer>
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>

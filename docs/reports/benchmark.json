@@ -1,0 +1,698 @@
+{
+  "isolated-spike/seed101": {
+    "comparison": {
+      "alerts": 165,
+      "delay": 0,
+      "f1": 0.012048,
+      "fn": 0,
+      "fp": 164,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.006061,
+      "recall": 1.0,
+      "tn": 315,
+      "tp": 1
+    },
+    "id": "f1ddaa82bfdb3f4ee193ae44537ccde9b046e650f63e03ffb3932aa02137c10e",
+    "metrics": {
+      "alerts": 7,
+      "delay": 0,
+      "f1": 0.25,
+      "fn": 0,
+      "fp": 6,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.142857,
+      "recall": 1.0,
+      "tn": 473,
+      "tp": 1
+    }
+  },
+  "isolated-spike/seed23": {
+    "comparison": {
+      "alerts": 162,
+      "delay": 0,
+      "f1": 0.01227,
+      "fn": 0,
+      "fp": 161,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.006173,
+      "recall": 1.0,
+      "tn": 318,
+      "tp": 1
+    },
+    "id": "1a19d6dee296e775a9276bebe47fbaad5745306e8b82382dc17a5b0d4e0c1064",
+    "metrics": {
+      "alerts": 1,
+      "delay": 0,
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "missing": 0,
+      "observed": 480,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tn": 479,
+      "tp": 1
+    }
+  },
+  "isolated-spike/seed7": {
+    "comparison": {
+      "alerts": 190,
+      "delay": 0,
+      "f1": 0.010471,
+      "fn": 0,
+      "fp": 189,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.005263,
+      "recall": 1.0,
+      "tn": 290,
+      "tp": 1
+    },
+    "id": "fd4889371186c22dfa8d63029147dd71d2b2415004aa5c517951a2962b24abda",
+    "metrics": {
+      "alerts": 1,
+      "delay": 0,
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "missing": 0,
+      "observed": 480,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tn": 479,
+      "tp": 1
+    }
+  },
+  "multichannel-burst/seed101": {
+    "comparison": {
+      "alerts": 182,
+      "delay": 1,
+      "f1": 0.15534,
+      "fn": 8,
+      "fp": 166,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.087912,
+      "recall": 0.666667,
+      "tn": 290,
+      "tp": 16
+    },
+    "id": "50eec83f1a70f3157c6fe2bc5ee6e2b52dc321fa6ae4d8e9f29382ecfb05d1e2",
+    "metrics": {
+      "alerts": 41,
+      "delay": 0,
+      "f1": 0.738462,
+      "fn": 0,
+      "fp": 17,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.585366,
+      "recall": 1.0,
+      "tn": 439,
+      "tp": 24
+    }
+  },
+  "multichannel-burst/seed23": {
+    "comparison": {
+      "alerts": 172,
+      "delay": 0,
+      "f1": 0.102041,
+      "fn": 14,
+      "fp": 162,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.05814,
+      "recall": 0.416667,
+      "tn": 294,
+      "tp": 10
+    },
+    "id": "e71c37ce49e2feaaab390f22bb98add2496ef60392a5990bb27892600b87e149",
+    "metrics": {
+      "alerts": 34,
+      "delay": 0,
+      "f1": 0.827586,
+      "fn": 0,
+      "fp": 10,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.705882,
+      "recall": 1.0,
+      "tn": 446,
+      "tp": 24
+    }
+  },
+  "multichannel-burst/seed7": {
+    "comparison": {
+      "alerts": 214,
+      "delay": 0,
+      "f1": 0.168067,
+      "fn": 4,
+      "fp": 194,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.093458,
+      "recall": 0.833333,
+      "tn": 262,
+      "tp": 20
+    },
+    "id": "201c799a5830b76ad1d01bbaba124c0828843a186232593aa60afe5244c2030b",
+    "metrics": {
+      "alerts": 36,
+      "delay": 0,
+      "f1": 0.8,
+      "fn": 0,
+      "fp": 12,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.666667,
+      "recall": 1.0,
+      "tn": 444,
+      "tp": 24
+    }
+  },
+  "nominal/seed101": {
+    "comparison": {
+      "alerts": 164,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 164,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 316,
+      "tp": 0
+    },
+    "id": "367d4f76ba52176c3dae3a63781d00c9c58e2f0723aa2dea5bc2b2d0ce5cfd18",
+    "metrics": {
+      "alerts": 6,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 6,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 474,
+      "tp": 0
+    }
+  },
+  "nominal/seed23": {
+    "comparison": {
+      "alerts": 161,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 161,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 319,
+      "tp": 0
+    },
+    "id": "a39febecc3da03d35aaeaccf0b7ce665230d56140b32bdc2d8bf9ac2dd3e7e6b",
+    "metrics": {
+      "alerts": 0,
+      "delay": null,
+      "f1": null,
+      "fn": 0,
+      "fp": 0,
+      "missing": 0,
+      "observed": 480,
+      "precision": null,
+      "recall": null,
+      "tn": 480,
+      "tp": 0
+    }
+  },
+  "nominal/seed7": {
+    "comparison": {
+      "alerts": 189,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 189,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 291,
+      "tp": 0
+    },
+    "id": "55dbaa2fee82b34ef3e3d8397ef15b38fb066a2d67b9ffe441dae53ec4e498e0",
+    "metrics": {
+      "alerts": 0,
+      "delay": null,
+      "f1": null,
+      "fn": 0,
+      "fp": 0,
+      "missing": 0,
+      "observed": 480,
+      "precision": null,
+      "recall": null,
+      "tn": 480,
+      "tp": 0
+    }
+  },
+  "partial-dropout/seed101": {
+    "comparison": {
+      "alerts": 164,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 164,
+      "missing": 12,
+      "observed": 468,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 304,
+      "tp": 0
+    },
+    "id": "b5e0c51628e5bd19aedbb71017309ebbfb6e3e8d533af1e9880b7044258cb825",
+    "metrics": {
+      "alerts": 6,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 6,
+      "missing": 12,
+      "observed": 468,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 462,
+      "tp": 0
+    }
+  },
+  "partial-dropout/seed23": {
+    "comparison": {
+      "alerts": 161,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 161,
+      "missing": 12,
+      "observed": 468,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 307,
+      "tp": 0
+    },
+    "id": "c71bf4b1c2520b68e6c2e784ae63ca0c1f210778b30503d1d7f254becd2f529d",
+    "metrics": {
+      "alerts": 0,
+      "delay": null,
+      "f1": null,
+      "fn": 0,
+      "fp": 0,
+      "missing": 12,
+      "observed": 468,
+      "precision": null,
+      "recall": null,
+      "tn": 468,
+      "tp": 0
+    }
+  },
+  "partial-dropout/seed7": {
+    "comparison": {
+      "alerts": 189,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 189,
+      "missing": 12,
+      "observed": 468,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 279,
+      "tp": 0
+    },
+    "id": "335f3ec6ddfcf2919572363bf857578c45ac20c3214ce2f78a5475d7318a3d03",
+    "metrics": {
+      "alerts": 0,
+      "delay": null,
+      "f1": null,
+      "fn": 0,
+      "fp": 0,
+      "missing": 12,
+      "observed": 468,
+      "precision": null,
+      "recall": null,
+      "tn": 468,
+      "tp": 0
+    }
+  },
+  "slow-drift/seed101": {
+    "comparison": {
+      "alerts": 165,
+      "delay": 23,
+      "f1": 0.129353,
+      "fn": 23,
+      "fp": 152,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.078788,
+      "recall": 0.361111,
+      "tn": 292,
+      "tp": 13
+    },
+    "id": "42fcdd1c31e26111a7065677023b6b20ea2a0127c1bde3cd6994e23c9a7d261e",
+    "metrics": {
+      "alerts": 33,
+      "delay": 13,
+      "f1": 0.666667,
+      "fn": 13,
+      "fp": 10,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.69697,
+      "recall": 0.638889,
+      "tn": 434,
+      "tp": 23
+    }
+  },
+  "slow-drift/seed23": {
+    "comparison": {
+      "alerts": 165,
+      "delay": 20,
+      "f1": 0.159204,
+      "fn": 20,
+      "fp": 149,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.09697,
+      "recall": 0.444444,
+      "tn": 295,
+      "tp": 16
+    },
+    "id": "2793474f027d73c335d005c4c2bffc4b987f849f1b8e7a363cb07c19dc2af7c5",
+    "metrics": {
+      "alerts": 32,
+      "delay": 8,
+      "f1": 0.823529,
+      "fn": 8,
+      "fp": 4,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.875,
+      "recall": 0.777778,
+      "tn": 440,
+      "tp": 28
+    }
+  },
+  "slow-drift/seed7": {
+    "comparison": {
+      "alerts": 191,
+      "delay": 22,
+      "f1": 0.123348,
+      "fn": 22,
+      "fp": 177,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.073298,
+      "recall": 0.388889,
+      "tn": 267,
+      "tp": 14
+    },
+    "id": "77fd57251c6f7d4b43c8032f0687a1e222c404c109acbe9f8fc46b419f5c60de",
+    "metrics": {
+      "alerts": 27,
+      "delay": 13,
+      "f1": 0.730159,
+      "fn": 13,
+      "fp": 4,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.851852,
+      "recall": 0.638889,
+      "tn": 440,
+      "tp": 23
+    }
+  },
+  "step-shift/seed101": {
+    "comparison": {
+      "alerts": 182,
+      "delay": 6,
+      "f1": 0.275229,
+      "fn": 6,
+      "fp": 152,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.164835,
+      "recall": 0.833333,
+      "tn": 292,
+      "tp": 30
+    },
+    "id": "6d57d14fc2a8793855569603edd3aa9f4f9a9d25aad1d4148e581a35a1a4223c",
+    "metrics": {
+      "alerts": 46,
+      "delay": 0,
+      "f1": 0.878049,
+      "fn": 0,
+      "fp": 10,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.782609,
+      "recall": 1.0,
+      "tn": 434,
+      "tp": 36
+    }
+  },
+  "step-shift/seed23": {
+    "comparison": {
+      "alerts": 179,
+      "delay": 6,
+      "f1": 0.27907,
+      "fn": 6,
+      "fp": 149,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.167598,
+      "recall": 0.833333,
+      "tn": 295,
+      "tp": 30
+    },
+    "id": "cf6930db40471bbfd252f8dec1f5e206dc00c3fe05f530c5c76591e765bb2df5",
+    "metrics": {
+      "alerts": 40,
+      "delay": 0,
+      "f1": 0.947368,
+      "fn": 0,
+      "fp": 4,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.9,
+      "recall": 1.0,
+      "tn": 440,
+      "tp": 36
+    }
+  },
+  "step-shift/seed7": {
+    "comparison": {
+      "alerts": 207,
+      "delay": 6,
+      "f1": 0.246914,
+      "fn": 6,
+      "fp": 177,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.144928,
+      "recall": 0.833333,
+      "tn": 267,
+      "tp": 30
+    },
+    "id": "aa300730d192ebfd23c80c4e4ca72f7de532ac5e8f45318508f1d31d24c3f807",
+    "metrics": {
+      "alerts": 40,
+      "delay": 0,
+      "f1": 0.947368,
+      "fn": 0,
+      "fp": 4,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.9,
+      "recall": 1.0,
+      "tn": 440,
+      "tp": 36
+    }
+  },
+  "stuck-sensor/seed101": {
+    "comparison": {
+      "alerts": 178,
+      "delay": 5,
+      "f1": 0.242991,
+      "fn": 10,
+      "fp": 152,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.146067,
+      "recall": 0.722222,
+      "tn": 292,
+      "tp": 26
+    },
+    "id": "c6354116e54782d6603c7a35bf6fdd94a6e668baed76b32ddbd9c5e1d68083b0",
+    "metrics": {
+      "alerts": 41,
+      "delay": 5,
+      "f1": 0.805195,
+      "fn": 5,
+      "fp": 10,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.756098,
+      "recall": 0.861111,
+      "tn": 434,
+      "tp": 31
+    }
+  },
+  "stuck-sensor/seed23": {
+    "comparison": {
+      "alerts": 175,
+      "delay": 5,
+      "f1": 0.246445,
+      "fn": 10,
+      "fp": 149,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.148571,
+      "recall": 0.722222,
+      "tn": 295,
+      "tp": 26
+    },
+    "id": "88db01b379c464e7380e136f075a563526c5bb6427a242e99f6908449e60d4e6",
+    "metrics": {
+      "alerts": 35,
+      "delay": 5,
+      "f1": 0.873239,
+      "fn": 5,
+      "fp": 4,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.885714,
+      "recall": 0.861111,
+      "tn": 440,
+      "tp": 31
+    }
+  },
+  "stuck-sensor/seed7": {
+    "comparison": {
+      "alerts": 203,
+      "delay": 5,
+      "f1": 0.217573,
+      "fn": 10,
+      "fp": 177,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.128079,
+      "recall": 0.722222,
+      "tn": 267,
+      "tp": 26
+    },
+    "id": "9b2b25a9f9267fd3aac3cf7eb5d163211f0222fe9dc82b03b5a223e2dadd284c",
+    "metrics": {
+      "alerts": 35,
+      "delay": 5,
+      "f1": 0.873239,
+      "fn": 5,
+      "fp": 4,
+      "missing": 0,
+      "observed": 480,
+      "precision": 0.885714,
+      "recall": 0.861111,
+      "tn": 440,
+      "tp": 31
+    }
+  },
+  "telemetry-gap/seed101": {
+    "comparison": {
+      "alerts": 164,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 164,
+      "missing": 36,
+      "observed": 444,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 280,
+      "tp": 0
+    },
+    "id": "622a599a1a51183b43f93193adb18d66c6f1f7712cd517f954406b3e2b40022f",
+    "metrics": {
+      "alerts": 6,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 6,
+      "missing": 36,
+      "observed": 444,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 438,
+      "tp": 0
+    }
+  },
+  "telemetry-gap/seed23": {
+    "comparison": {
+      "alerts": 161,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 161,
+      "missing": 36,
+      "observed": 444,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 283,
+      "tp": 0
+    },
+    "id": "3685dd7be922612726232d3bff08cb66859d64c54c758ac835af4dfc02ce7668",
+    "metrics": {
+      "alerts": 0,
+      "delay": null,
+      "f1": null,
+      "fn": 0,
+      "fp": 0,
+      "missing": 36,
+      "observed": 444,
+      "precision": null,
+      "recall": null,
+      "tn": 444,
+      "tp": 0
+    }
+  },
+  "telemetry-gap/seed7": {
+    "comparison": {
+      "alerts": 189,
+      "delay": null,
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 189,
+      "missing": 36,
+      "observed": 444,
+      "precision": 0.0,
+      "recall": null,
+      "tn": 255,
+      "tp": 0
+    },
+    "id": "7b8d57a8099ccf4549274a97f301ae51131651f13388a85b8d86e360d83427bf",
+    "metrics": {
+      "alerts": 0,
+      "delay": null,
+      "f1": null,
+      "fn": 0,
+      "fp": 0,
+      "missing": 36,
+      "observed": 444,
+      "precision": null,
+      "recall": null,
+      "tn": 444,
+      "tp": 0
+    }
+  }
+}

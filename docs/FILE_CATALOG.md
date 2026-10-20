@@ -1,0 +1,64 @@
+# File catalog
+
+Every tracked-intent file; dependencies/private outputs are excluded.
+
+- `.gitattributes` — Normalize source text to LF and preserve binary screenshot assets.
+- `.github/workflows/codeql.yml` — # Security analysis by Jason Stys. Jobs: Python and JavaScript/TypeScript CodeQL.
+- `.github/workflows/release.yml` — # Manual draft-release packaging by Jason Stys. Never publishes automatically.
+- `.github/workflows/validate.yml` — # Reproducible detector and portable app validation by Jason Stys.
+- `.gitignore` — Exclude dependencies, runtime/private data, histories and generated builds from Git.
+- `.prettierignore` — Exclude generated indexes, locks and build/dependency trees from formatting.
+- `.prettierrc.json` — Shared readable browser/configuration/Markdown formatting options.
+- `LICENSE` — MIT License
+- `README.md` — # Spacecraft Telemetry Anomaly Studio
+- `docs/API.md` — # Local API, CSV and evidence
+- `docs/ARCHITECTURE.md` — # Architecture and decisions
+- `docs/MODEL.md` — # Detector and synthetic-data contract
+- `docs/RELEASE.md` — # Build, release and rollback
+- `docs/SECURITY.md` — # Security and privacy
+- `docs/THIRD_PARTY.md` — # References and distribution notices
+- `docs/USER_GUIDE.md` — # User guide
+- `docs/VALIDATION.md` — # Validation strategy and observed evidence
+- `docs/images/inspector.jpg` — Binary screenshot asset from local application validation
+- `docs/images/overview.jpg` — Binary screenshot asset from local application validation
+- `docs/reports/benchmark.json` — Reviewed synthetic detector benchmark summaries and deterministic evidence hashes.
+- `examples/slow-drift.csv` — tick,mode,thermal,bus,load
+- `launcher.py` — """Portable application entry point by Jason Stys; main and argv: docs/CODE_INDEX.md.
+- `licenses/PYTHON.txt` — A. HISTORY OF THE SOFTWARE
+- `package-lock.json` — Resolved npm dependency graph with download integrity values.
+- `package.json` — Pinned browser dependencies, Node version contract and build/test/audit scripts.
+- `playwright.config.ts` — /** Cross-engine website integration configuration by Jason Stys.
+- `pyproject.toml` — Python metadata, supported runtimes, strict lint/type/test and coverage gates.
+- `requirements-dev.in` — Scientific test, type, style, audit and packaging dependency inputs.
+- `requirements-dev.lock` — Universal pinned development/build graph with distribution hashes.
+- `requirements.in` — Standard-library-only Python runtime declaration (no third-party runtime packages).
+- `requirements.lock` — Empty runtime lock: this service uses only the CPython standard library.
+- `telemetry/__init__.py` — """Explainable offline telemetry anomaly studio by Jason Stys; see docs/CODE_INDEX.md."""
+- `telemetry/__main__.py` — """Local website launcher and reproducible export CLI by Jason Stys.
+- `telemetry/detector.py` — """Causal robust limits, drift and flatline detection by Jason Stys.
+- `telemetry/engine.py` — """Synthetic fixtures, label-isolated analysis and honest metrics by Jason Stys.
+- `telemetry/reports.py` — """Portable reports, canonical CSV inputs and local immutable SQL history by Jason Stys.
+- `telemetry/resources/history.sql` — -- Immutable local experiment history by Jason Stys. Tables/triggers: docs/CODE_INDEX.md.
+- `telemetry/server.py` — """Loopback-only, read-only HTTP application by Jason Stys; not an Internet server.
+- `tests/test_detector.py` — """Independent robust-statistic, causal and edge-case contracts by Jason Stys.
+- `tests/test_import.py` — """Bounded local numeric CSV, undefined imported metrics and parser fuzz tests by Jason Stys.
+- `tests/test_io.py` — """CLI, report, SQLite and actual loopback HTTP integration tests by Jason Stys.
+- `tests/ui.spec.ts` — /* Actual production browser tests by Jason Stys. Functions: ready, choose, inspect and test cases.
+- `tools/benchmark.py` — """Measured synthetic detector evaluation and cross-platform golden evidence by Jason Stys.
+- `tools/package_app.py` — """Build portable native bundles from reviewed source by Jason Stys.
+- `tools/prepare_release.py` — """Fail-closed draft release preparation by Jason Stys.
+- `tools/smoke_app.py` — """Actual frozen-executable export and loopback smoke test by Jason Stys.
+- `tools/upload_release.py` — """Upload only a freshly smoke-tested native bundle to its draft by Jason Stys.
+- `tools/verify_repo.py` — """Generate/check exact-line code and file inventories by Jason Stys.
+- `tsconfig.json` — Strict TypeScript contracts for browser, unit and end-user test code.
+- `vitest.config.ts` — /** Pure display-logic tests by Jason Stys; configuration inventory: docs/CODE_INDEX.md. */
+- `web/env.d.ts` — /** Vite static asset typing by Jason Stys; reference declarations: docs/CODE_INDEX.md. */
+- `web/index.html` — <!-- Telemetry analysis interface by Jason Stys. Sections: configuration, signal, evaluation, ledger, help.
+- `web/main.ts` — /* Offline telemetry analysis, chart and evidence UI by Jason Stys.
+- `web/model.test.ts` — /* Pure browser contracts by Jason Stys. Variables: gaps, finite catalog and poisoned preferences.
+- `web/model.ts` — /* Pure plotting, optional preferences and honest display transforms by Jason Stys.
+- `web/style.css` — /* Responsive signal-analysis studio by Jason Stys.
+- `web/types.ts` — /* Telemetry UI schema by Jason Stys. Interfaces: Settings, Catalog, Frame, Decision, Row, Run.
+- `web/vite.config.ts` — /** Local production asset build by Jason Stys. Configuration variables: docs/CODE_INDEX.md. */
+- `docs/CODE_INDEX.md` — Generated exact-line source inventory.
+- `docs/FILE_CATALOG.md` — This generated complete file index.
