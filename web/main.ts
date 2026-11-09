@@ -5,6 +5,7 @@
  */
 import "./style.css";
 import { metric, preferences, segments } from "./model";
+import { reviewDocument, type Annotation } from "./review";
 import type { Catalog, Metrics, Run, Settings } from "./types";
 
 /** Require authored DOM identifiers; do not continue with a missing control or panel. */
@@ -24,6 +25,54 @@ let generation = 0;
 let tick = 120;
 let low = 0;
 let high = 1;
+let annotations: Record<string, Annotation> = {};
+
+/** Keep the analyst's review in this tab, keyed by the current immutable evidence run. */
+function triage(): void {
+  const list = element("episodes");
+  list.replaceChildren();
+  if (!run) return;
+  text(
+    "episode-summary",
+    `${run.episodes.length} episodes · boundaries preserve missing/context uncertainty`,
+  );
+  for (const episode of run.episodes) {
+    const item = document.createElement("li");
+    const title = document.createElement("p");
+    title.textContent = `${episode.channel} / ${episode.mode} · T+${episode.start_tick}–${episode.end_tick} · ${episode.observed_ticks} observed alerts · ${episode.reasons.join(" + ")} · ${episode.start_boundary} → ${episode.end_boundary}${episode.left_censored || episode.right_censored ? " (censored)" : ""}`;
+    const statusLabel = document.createElement("label");
+    statusLabel.textContent = `Review ${episode.id}`;
+    const status = document.createElement("select");
+    for (const value of ["unreviewed", "investigate", "explained", "uncertain"])
+      status.append(new Option(value, value));
+    const noteLabel = document.createElement("label");
+    noteLabel.textContent = `Note ${episode.id}`;
+    const note = document.createElement("textarea");
+    note.maxLength = 1000;
+    note.rows = 2;
+    const update = (): void => {
+      annotations[episode.id] = { status: status.value, note: note.value };
+    };
+    status.addEventListener("change", update);
+    note.addEventListener("input", update);
+    statusLabel.append(status);
+    noteLabel.append(note);
+    item.append(title, statusLabel, noteLabel);
+    list.append(item);
+  }
+}
+
+/** Download inert JSON without uploading notes or altering the immutable analysis. */
+function downloadReview(): void {
+  if (!run) return;
+  const payload = JSON.stringify(reviewDocument(run, annotations), null, 2);
+  const url = URL.createObjectURL(new Blob([payload], { type: "application/json" }));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `telemetry-review-${run.id.slice(0, 12)}.json`;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
 
 /** Read finite form values; the server validates them independently before analysis. */
 function selected(): Settings {
@@ -237,6 +286,7 @@ async function load(): Promise<void> {
     const data = (await response.json()) as Run;
     if (active !== generation) return;
     run = data;
+    annotations = {};
     tick = run.settings.fault_tick;
     element<HTMLInputElement>("tick").max = String(run.observations.length - 1);
     try {
@@ -250,6 +300,7 @@ async function load(): Promise<void> {
     element("results").hidden = false;
     chart();
     evaluation();
+    triage();
     text(
       "status",
       `Complete · ${run.observations.length} frames · ${run.scenario} · training excluded from evaluation`,
@@ -310,6 +361,7 @@ async function start(): Promise<void> {
       void load();
     });
     element("retry").addEventListener("click", () => void load());
+    element("download-review").addEventListener("click", downloadReview);
     element("channel").addEventListener("change", chart);
     element("labels").addEventListener("change", chart);
     element("ledger-filter").addEventListener("change", ledger);

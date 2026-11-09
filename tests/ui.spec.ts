@@ -36,6 +36,27 @@ test("native analysis and explainable selected spike", async ({ page }) => {
   await page.getByLabel("Show injected labels").check();
   await expect(page.locator(".truth-label")).toHaveCount(1);
 });
+test("analyst triage exports run-bound notes and resets on a new analysis", async ({ page }) => {
+  await ready(page);
+  await expect(page.locator("#episode-summary")).toContainText("1 episodes");
+  await expect(page.locator("#episodes")).toContainText("120–120");
+  await page.locator("#episodes select").selectOption("uncertain");
+  await page.locator("#episodes textarea").fill("Check the synthetic spike; <b>plain text</b>.");
+  const pending = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download human review JSON" }).click();
+  const download = await pending;
+  const report = JSON.parse(await readFile((await download.path())!, "utf8"));
+  expect(report.run_sha256).toMatch(/^[0-9a-f]{64}$/);
+  expect(report.episodes[0].annotation).toEqual({
+    status: "uncertain",
+    note: "Check the synthetic spike; <b>plain text</b>.",
+  });
+  expect(report.episodes[0].end_boundary).toBe("recovery");
+  await choose(page, "nominal");
+  await expect(page.locator("#episodes li")).toHaveCount(0);
+  await choose(page, "isolated-spike");
+  await expect(page.locator("#episodes textarea")).toHaveValue("");
+});
 test("missing values are gaps, partial loss does not hide other channels", async ({ page }) => {
   await ready(page);
   await choose(page, "partial-dropout");

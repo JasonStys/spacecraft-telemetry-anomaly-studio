@@ -17,11 +17,13 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `docs/RELEASE.md` — # Build, release and rollback
 - `docs/SECURITY.md` — # Security and privacy
 - `docs/THIRD_PARTY.md` — # References and distribution notices
+- `docs/TRIAGE.md` — # Review alert episodes
 - `docs/USER_GUIDE.md` — # User guide
 - `docs/VALIDATION.md` — # Validation strategy and observed evidence
 - `docs/images/inspector.jpg` — Binary screenshot asset from local application validation
 - `docs/images/overview.jpg` — Binary screenshot asset from local application validation
 - `docs/reports/CI_BASELINE.md` — # First published CI evidence
+- `docs/reports/PRACTICAL_WORKFLOWS_20261109.md` — # Triage workflow validation — 2026-11-09
 - `docs/reports/benchmark.json` — Reviewed synthetic detector benchmark summaries and deterministic evidence hashes.
 - `examples/slow-drift.csv` — tick,mode,thermal,bus,load
 - `launcher.py` — """Portable application entry point by Jason Stys; main and argv: docs/CODE_INDEX.md.
@@ -41,9 +43,11 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `telemetry/reports.py` — """Portable reports, canonical CSV inputs and local immutable SQL history by Jason Stys.
 - `telemetry/resources/history.sql` — -- Immutable local experiment history by Jason Stys. Tables/triggers: docs/CODE_INDEX.md.
 - `telemetry/server.py` — """Loopback-only, read-only HTTP application by Jason Stys; not an Internet server.
+- `telemetry/triage.py` — """Run-derived alert episode boundaries by Jason Stys.
 - `tests/test_detector.py` — """Independent robust-statistic, causal and edge-case contracts by Jason Stys.
 - `tests/test_import.py` — """Bounded local numeric CSV, undefined imported metrics and parser fuzz tests by Jason Stys.
 - `tests/test_io.py` — """CLI, report, SQLite and actual loopback HTTP integration tests by Jason Stys.
+- `tests/test_triage.py` — """Independent episode-boundary examples by Jason Stys.
 - `tests/ui.spec.ts` — /* Actual production browser tests by Jason Stys. Functions: ready, choose, inspect and test cases.
 - `tools/benchmark.py` — """Measured synthetic detector evaluation and cross-platform golden evidence by Jason Stys.
 - `tools/package_app.py` — """Build portable native bundles from reviewed source by Jason Stys.
@@ -58,6 +62,8 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `web/main.ts` — /* Offline telemetry analysis, chart and evidence UI by Jason Stys.
 - `web/model.test.ts` — /* Pure browser contracts by Jason Stys. Variables: gaps, finite catalog and poisoned preferences.
 - `web/model.ts` — /* Pure plotting, optional preferences and honest display transforms by Jason Stys.
+- `web/review.test.ts` — /* Run-bound review contract tests by Jason Stys. Variables: detached fixture and invalid notes.
+- `web/review.ts` — /* Run-bound human annotations by Jason Stys. Function: reviewDocument; variables: allowed statuses,
 - `web/style.css` — /* Responsive signal-analysis studio by Jason Stys.
 - `web/types.ts` — /* Telemetry UI schema by Jason Stys. Interfaces: Settings, Catalog, Frame, Decision, Row, Run.
 - `web/vite.config.ts` — /** Local production asset build by Jason Stys. Configuration variables: docs/CODE_INDEX.md. */
