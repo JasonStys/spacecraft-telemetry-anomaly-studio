@@ -134,100 +134,100 @@ Line numbers refer to formatted source, not this generated document.
 
 | Line | Definition / variable / structural identifier |
 | --- | --- |
-| 19 | `variable SCENARIOS` |
-| 29 | `variable CHOICES` |
-| 39 | `definition Settings` |
-| 42 | `variable scenario` |
-| 43 | `variable duration` |
-| 44 | `variable fault_tick` |
-| 45 | `variable seed` |
-| 46 | `variable threshold` |
-| 47 | `variable contextual` |
-| 49 | `definition __post_init__` |
-| 49 | `parameter self` |
-| 53 | `variable choices` |
-| 53 | `variable key` |
-| 54 | `variable value` |
-| 59 | `definition catalog` |
-| 70 | `definition canonical` |
-| 70 | `parameter value` |
-| 75 | `definition run_id` |
-| 75 | `parameter run` |
-| 77 | `variable k` |
-| 77 | `variable v` |
-| 80 | `definition generate` |
-| 80 | `parameter settings` |
-| 82 | `variable random` |
-| 83 | `variable frames` |
-| 84 | `variable truth` |
-| 85 | `variable frozen` |
-| 86 | `variable tick` |
-| 87 | `variable mode` |
-| 88 | `variable centers` |
-| 89 | `variable nominal` |
-| 90 | `variable center` |
-| 91 | `variable random` |
-| 93 | `variable values` |
-| 94 | `variable elapsed` |
-| 95 | `variable affected` |
-| 97 | `variable frozen` |
-| 111 | `variable values` |
-| 119 | `definition metrics` |
-| 119 | `parameter rows` |
-| 119 | `parameter truth` |
-| 121 | `variable result` |
-| 134 | `variable first_truth` |
-| 135 | `variable first_detection` |
-| 136 | `variable row` |
-| 137 | `variable channel` |
-| 138 | `variable name` |
-| 138 | `variable value` |
-| 143 | `variable predicted` |
-| 146 | `variable actual` |
-| 157 | `variable first_truth` |
-| 159 | `variable first_detection` |
-| 161 | `variable precision_denominator` |
-| 162 | `variable recall_denominator` |
-| 169 | `variable f1_denominator` |
-| 177 | `variable key` |
-| 182 | `definition analyze` |
-| 183 | `parameter frames` |
-| 183 | `parameter settings` |
-| 183 | `parameter source` |
-| 183 | `parameter truth` |
-| 187 | `variable training` |
-| 188 | `variable model` |
-| 189 | `variable detector` |
-| 190 | `variable frame` |
-| 190 | `variable rows` |
-| 191 | `variable alternate` |
-| 196 | `variable comparison` |
-| 196 | `variable frame` |
-| 197 | `variable run` |
-| 207 | `variable frame` |
-| 209 | `variable channels` |
-| 209 | `variable tick` |
-| 212 | `variable band` |
-| 212 | `variable bands` |
-| 212 | `variable mode` |
-| 232 | `definition cached` |
-| 232 | `parameter settings` |
-| 234 | `variable frames` |
-| 234 | `variable truth` |
-| 238 | `definition build_run` |
-| 238 | `parameter settings` |
-| 243 | `definition read_csv` |
-| 243 | `parameter payload` |
-| 248 | `variable reader` |
-| 251 | `variable frames` |
-| 252 | `variable row` |
-| 256 | `variable v` |
-| 265 | `variable channel` |
-| 275 | `definition build_import` |
-| 275 | `parameter path` |
-| 275 | `parameter settings` |
-| 277 | `variable source` |
-| 278 | `variable frames` |
+| 20 | `variable SCENARIOS` |
+| 30 | `variable CHOICES` |
+| 40 | `definition Settings` |
+| 43 | `variable scenario` |
+| 44 | `variable duration` |
+| 45 | `variable fault_tick` |
+| 46 | `variable seed` |
+| 47 | `variable threshold` |
+| 48 | `variable contextual` |
+| 50 | `definition __post_init__` |
+| 50 | `parameter self` |
+| 54 | `variable choices` |
+| 54 | `variable key` |
+| 55 | `variable value` |
+| 60 | `definition catalog` |
+| 71 | `definition canonical` |
+| 71 | `parameter value` |
+| 76 | `definition run_id` |
+| 76 | `parameter run` |
+| 78 | `variable k` |
+| 78 | `variable v` |
+| 81 | `definition generate` |
+| 81 | `parameter settings` |
+| 83 | `variable random` |
+| 84 | `variable frames` |
+| 85 | `variable truth` |
+| 86 | `variable frozen` |
+| 87 | `variable tick` |
+| 88 | `variable mode` |
+| 89 | `variable centers` |
+| 90 | `variable nominal` |
+| 91 | `variable center` |
+| 92 | `variable random` |
+| 94 | `variable values` |
+| 95 | `variable elapsed` |
+| 96 | `variable affected` |
+| 98 | `variable frozen` |
+| 112 | `variable values` |
+| 120 | `definition metrics` |
+| 120 | `parameter rows` |
+| 120 | `parameter truth` |
+| 122 | `variable result` |
+| 135 | `variable first_truth` |
+| 136 | `variable first_detection` |
+| 137 | `variable row` |
+| 138 | `variable channel` |
+| 139 | `variable name` |
+| 139 | `variable value` |
+| 144 | `variable predicted` |
+| 147 | `variable actual` |
+| 158 | `variable first_truth` |
+| 160 | `variable first_detection` |
+| 162 | `variable precision_denominator` |
+| 163 | `variable recall_denominator` |
+| 170 | `variable f1_denominator` |
+| 178 | `variable key` |
+| 183 | `definition analyze` |
+| 184 | `parameter frames` |
+| 184 | `parameter settings` |
+| 184 | `parameter source` |
+| 184 | `parameter truth` |
+| 188 | `variable training` |
+| 189 | `variable model` |
+| 190 | `variable detector` |
+| 191 | `variable frame` |
+| 191 | `variable rows` |
+| 192 | `variable alternate` |
+| 197 | `variable comparison` |
+| 197 | `variable frame` |
+| 198 | `variable run` |
+| 208 | `variable frame` |
+| 211 | `variable channels` |
+| 211 | `variable tick` |
+| 214 | `variable band` |
+| 214 | `variable bands` |
+| 214 | `variable mode` |
+| 234 | `definition cached` |
+| 234 | `parameter settings` |
+| 236 | `variable frames` |
+| 236 | `variable truth` |
+| 240 | `definition build_run` |
+| 240 | `parameter settings` |
+| 245 | `definition read_csv` |
+| 245 | `parameter payload` |
+| 250 | `variable reader` |
+| 253 | `variable frames` |
+| 254 | `variable row` |
+| 258 | `variable v` |
+| 267 | `variable channel` |
+| 277 | `definition build_import` |
+| 277 | `parameter path` |
+| 277 | `parameter settings` |
+| 279 | `variable source` |
+| 280 | `variable frames` |
 
 ## telemetry/reports.py
 
@@ -323,6 +323,26 @@ Line numbers refer to formatted source, not this generated document.
 | 152 | `parameter assets` |
 | 152 | `parameter port` |
 | 154 | `variable server` |
+
+## telemetry/triage.py
+
+| Line | Definition / variable / structural identifier |
+| --- | --- |
+| 10 | `definition episodes` |
+| 10 | `parameter rows` |
+| 17 | `variable result` |
+| 20 | `variable channel` |
+| 20 | `variable channel_index` |
+| 21 | `variable active` |
+| 22 | `variable previous` |
+| 23 | `variable row` |
+| 24 | `variable decision` |
+| 25 | `variable boundary` |
+| 38 | `variable active` |
+| 41 | `variable start_boundary` |
+| 50 | `variable active` |
+| 68 | `variable previous` |
+| 73 | `parameter item` |
 
 ## tests/test_detector.py
 
@@ -503,6 +523,29 @@ Line numbers refer to formatted source, not this generated document.
 | 283 | `parameter k` |
 | 283 | `parameter p` |
 
+## tests/test_triage.py
+
+| Line | Definition / variable / structural identifier |
+| --- | --- |
+| 13 | `definition row` |
+| 13 | `parameter flagged` |
+| 13 | `parameter mode` |
+| 13 | `parameter tick` |
+| 13 | `parameter value` |
+| 29 | `definition test_gap_context_and_window_censoring` |
+| 31 | `variable rows` |
+| 40 | `variable result` |
+| 41 | `variable e` |
+| 47 | `variable e` |
+| 48 | `variable e` |
+| 53 | `definition test_empty_normal_and_channel_independence` |
+| 57 | `variable rows` |
+| 58 | `variable index` |
+| 58 | `variable item` |
+| 66 | `definition test_run_evidence_contains_episodes_without_label_dependency` |
+| 68 | `variable run` |
+| 70 | `variable e` |
+
 ## tests/ui.spec.ts
 
 | Line | Definition / variable / structural identifier |
@@ -511,16 +554,21 @@ Line numbers refer to formatted source, not this generated document.
 | 10 | `ready` |
 | 15 | `choose` |
 | 21 | `inspect` |
-| 69 | `format` |
-| 70 | `pending` |
-| 72 | `download` |
-| 73 | `path` |
-| 75 | `body` |
-| 120 | `overflow` |
-| 125 | `tag` |
-| 126 | `id` |
-| 127 | `class` |
-| 128 | `right` |
+| 45 | `pending` |
+| 47 | `download` |
+| 48 | `report` |
+| 51 | `status` |
+| 52 | `note` |
+| 90 | `format` |
+| 91 | `pending` |
+| 93 | `download` |
+| 94 | `path` |
+| 96 | `body` |
+| 141 | `overflow` |
+| 146 | `tag` |
+| 147 | `id` |
+| 148 | `class` |
+| 149 | `right` |
 
 ## tools/benchmark.py
 
@@ -709,127 +757,148 @@ Line numbers refer to formatted source, not this generated document.
 | 152 | `delay` |
 | 156 | `missing` |
 | 174 | `comparison` |
-| 191 | `ledger-filter` |
-| 198 | `events` |
-| 200 | `download-json` |
-| 201 | `download-csv` |
-| 202 | `download-html` |
-| 203 | `download-input` |
-| 212 | `provenance` |
-| 218 | `help` |
+| 186 | `episode-summary` |
+| 192 | `episodes` |
+| 193 | `download-review` |
+| 200 | `ledger-filter` |
+| 207 | `events` |
+| 209 | `download-json` |
+| 210 | `download-csv` |
+| 211 | `download-html` |
+| 212 | `download-input` |
+| 221 | `provenance` |
+| 227 | `help` |
 
 ## web/main.ts
 
 | Line | Definition / variable / structural identifier |
 | --- | --- |
-| 11 | `element` |
-| 12 | `value` |
-| 17 | `text` |
-| 20 | `catalog` |
-| 21 | `run` |
-| 22 | `controller` |
-| 23 | `generation` |
-| 24 | `tick` |
-| 25 | `low` |
-| 26 | `high` |
-| 29 | `selected` |
-| 33 | `key` |
-| 38 | `svgNode` |
-| 39 | `node` |
-| 46 | `chart` |
-| 48 | `index` |
-| 49 | `observations` |
-| 50 | `tick` |
-| 51 | `value` |
-| 53 | `limits` |
-| 54 | `tick` |
-| 55 | `lower` |
-| 56 | `upper` |
-| 58 | `finite` |
-| 59 | `low` |
-| 60 | `high` |
-| 61 | `duration` |
-| 64 | `x` |
-| 65 | `y` |
-| 66 | `width` |
-| 67 | `height` |
-| 68 | `fill` |
-| 71 | `part` |
-| 72 | `value` |
-| 73 | `y` |
-| 76 | `x` |
-| 83 | `field` |
-| 84 | `path` |
-| 91 | `path` |
-| 93 | `row` |
-| 94 | `decision` |
-| 97 | `cx` |
-| 98 | `cy` |
-| 99 | `r` |
-| 100 | `fill` |
-| 101 | `class` |
-| 108 | `x` |
-| 109 | `y` |
-| 110 | `width` |
-| 111 | `height` |
-| 112 | `fill` |
-| 113 | `class` |
-| 117 | `id` |
-| 118 | `x1` |
-| 119 | `x2` |
-| 120 | `y1` |
-| 121 | `y2` |
-| 122 | `stroke` |
-| 129 | `inspect` |
-| 131 | `index` |
-| 132 | `row` |
-| 134 | `decision` |
-| 145 | `explanation` |
-| 150 | `x` |
-| 155 | `ledger` |
-| 156 | `list` |
-| 159 | `index` |
-| 160 | `filter` |
-| 161 | `row` |
-| 162 | `decision` |
-| 163 | `missing` |
-| 170 | `item` |
-| 171 | `button` |
-| 176 | `tick` |
-| 186 | `item` |
-| 193 | `evaluation` |
-| 195 | `key` |
-| 198 | `body` |
-| 200 | `strategies` |
-| 205 | `row` |
-| 206 | `header` |
-| 210 | `key` |
-| 211 | `cell` |
-| 223 | `load` |
-| 224 | `controller` |
-| 225 | `controller` |
-| 226 | `active` |
-| 227 | `settings` |
-| 228 | `query` |
-| 229 | `run` |
-| 235 | `response` |
-| 237 | `data` |
-| 239 | `run` |
-| 240 | `tick` |
-| 247 | `format` |
-| 270 | `configure` |
-| 276 | `start` |
-| 278 | `response` |
-| 280 | `catalog` |
-| 281 | `name` |
-| 284 | `value` |
-| 287 | `key` |
-| 291 | `raw` |
-| 293 | `raw` |
-| 300 | `load` |
-| 310 | `load` |
-| 317 | `tick` |
-| 326 | `start` |
+| 8 | `Annotation` |
+| 12 | `element` |
+| 13 | `value` |
+| 18 | `text` |
+| 21 | `catalog` |
+| 22 | `run` |
+| 23 | `controller` |
+| 24 | `generation` |
+| 25 | `tick` |
+| 26 | `low` |
+| 27 | `high` |
+| 28 | `annotations` |
+| 31 | `triage` |
+| 32 | `list` |
+| 39 | `episode` |
+| 40 | `item` |
+| 41 | `title` |
+| 43 | `statusLabel` |
+| 45 | `status` |
+| 46 | `value` |
+| 48 | `noteLabel` |
+| 50 | `note` |
+| 53 | `update` |
+| 66 | `downloadReview` |
+| 68 | `payload` |
+| 69 | `url` |
+| 70 | `link` |
+| 78 | `selected` |
+| 82 | `key` |
+| 87 | `svgNode` |
+| 88 | `node` |
+| 95 | `chart` |
+| 97 | `index` |
+| 98 | `observations` |
+| 99 | `tick` |
+| 100 | `value` |
+| 102 | `limits` |
+| 103 | `tick` |
+| 104 | `lower` |
+| 105 | `upper` |
+| 107 | `finite` |
+| 108 | `low` |
+| 109 | `high` |
+| 110 | `duration` |
+| 113 | `x` |
+| 114 | `y` |
+| 115 | `width` |
+| 116 | `height` |
+| 117 | `fill` |
+| 120 | `part` |
+| 121 | `value` |
+| 122 | `y` |
+| 125 | `x` |
+| 132 | `field` |
+| 133 | `path` |
+| 140 | `path` |
+| 142 | `row` |
+| 143 | `decision` |
+| 146 | `cx` |
+| 147 | `cy` |
+| 148 | `r` |
+| 149 | `fill` |
+| 150 | `class` |
+| 157 | `x` |
+| 158 | `y` |
+| 159 | `width` |
+| 160 | `height` |
+| 161 | `fill` |
+| 162 | `class` |
+| 166 | `id` |
+| 167 | `x1` |
+| 168 | `x2` |
+| 169 | `y1` |
+| 170 | `y2` |
+| 171 | `stroke` |
+| 178 | `inspect` |
+| 180 | `index` |
+| 181 | `row` |
+| 183 | `decision` |
+| 194 | `explanation` |
+| 199 | `x` |
+| 204 | `ledger` |
+| 205 | `list` |
+| 208 | `index` |
+| 209 | `filter` |
+| 210 | `row` |
+| 211 | `decision` |
+| 212 | `missing` |
+| 219 | `item` |
+| 220 | `button` |
+| 225 | `tick` |
+| 235 | `item` |
+| 242 | `evaluation` |
+| 244 | `key` |
+| 247 | `body` |
+| 249 | `strategies` |
+| 254 | `row` |
+| 255 | `header` |
+| 259 | `key` |
+| 260 | `cell` |
+| 272 | `load` |
+| 273 | `controller` |
+| 274 | `controller` |
+| 275 | `active` |
+| 276 | `settings` |
+| 277 | `query` |
+| 278 | `run` |
+| 284 | `response` |
+| 286 | `data` |
+| 288 | `run` |
+| 289 | `annotations` |
+| 290 | `tick` |
+| 297 | `format` |
+| 321 | `configure` |
+| 327 | `start` |
+| 329 | `response` |
+| 331 | `catalog` |
+| 332 | `name` |
+| 335 | `value` |
+| 338 | `key` |
+| 342 | `raw` |
+| 344 | `raw` |
+| 351 | `load` |
+| 361 | `load` |
+| 369 | `tick` |
+| 378 | `start` |
 
 ## web/model.test.ts
 
@@ -869,6 +938,31 @@ Line numbers refer to formatted source, not this generated document.
 | 36 | `result` |
 | 39 | `data` |
 | 43 | `key` |
+
+## web/review.test.ts
+
+| Line | Definition / variable / structural identifier |
+| --- | --- |
+| 7 | `run` |
+| 9 | `before` |
+| 10 | `result` |
+| 17 | `annotations` |
+| 24 | `episodes` |
+
+## web/review.ts
+
+| Line | Definition / variable / structural identifier |
+| --- | --- |
+| 5 | `Annotation` |
+| 6 | `status` |
+| 7 | `note` |
+| 10 | `reviewDocument` |
+| 11 | `ids` |
+| 22 | `schema` |
+| 23 | `run_sha256` |
+| 24 | `scope` |
+| 26 | `episodes` |
+| 28 | `annotation` |
 
 ## web/style.css
 
@@ -1190,21 +1284,35 @@ Line numbers refer to formatted source, not this generated document.
 | 37 | `mode` |
 | 38 | `channels` |
 | 40 | `Metrics` |
-| 41 | `Run` |
+| 41 | `Episode` |
 | 42 | `id` |
-| 43 | `scenario` |
-| 44 | `settings` |
-| 45 | `observations` |
-| 46 | `rows` |
-| 47 | `truth` |
-| 48 | `model` |
-| 49 | `metrics` |
-| 50 | `comparison` |
-| 51 | `provenance` |
-| 52 | `training_ticks` |
-| 53 | `evaluation_ticks` |
-| 54 | `source` |
-| 55 | `algorithm` |
+| 43 | `channel` |
+| 44 | `mode` |
+| 45 | `start_tick` |
+| 46 | `end_tick` |
+| 47 | `observed_ticks` |
+| 48 | `reasons` |
+| 49 | `peak_absolute_score` |
+| 50 | `start_boundary` |
+| 51 | `end_boundary` |
+| 52 | `left_censored` |
+| 53 | `right_censored` |
+| 55 | `Run` |
+| 56 | `id` |
+| 57 | `scenario` |
+| 58 | `settings` |
+| 59 | `observations` |
+| 60 | `rows` |
+| 61 | `episodes` |
+| 62 | `truth` |
+| 63 | `model` |
+| 64 | `metrics` |
+| 65 | `comparison` |
+| 66 | `provenance` |
+| 67 | `training_ticks` |
+| 68 | `evaluation_ticks` |
+| 69 | `source` |
+| 70 | `algorithm` |
 
 ## web/vite.config.ts
 

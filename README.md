@@ -1,5 +1,7 @@
 # Spacecraft Telemetry Anomaly Studio
 
+Review consecutive flags as **run-bound triage episodes** with explicit missing-value, mode-change and scoring-window boundaries. Add bounded human notes and export a review linked to the immutable evidence hash. Censored episodes never imply observed recovery; annotations never change detector decisions or synthetic truth. See [the triage guide](docs/TRIAGE.md).
+
 [![Validation](https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/actions/workflows/validate.yml/badge.svg)](https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/actions/workflows/validate.yml)
 [![CodeQL](https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/actions/workflows/codeql.yml/badge.svg)](https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/actions/workflows/codeql.yml)
 

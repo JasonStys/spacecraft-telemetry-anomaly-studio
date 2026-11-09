@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from telemetry.detector import CHANNELS, MODES, TRAINING, Detector, Frame, fit, validate_frames
+from telemetry.triage import episodes
 
 SCENARIOS = {
     "nominal": "Healthy context transitions; no injected sensor anomaly",
@@ -206,6 +207,7 @@ def analyze(
         },
         "observations": [asdict(frame) for frame in frames],
         "rows": rows,
+        "episodes": episodes(rows),
         "truth": {str(tick): sorted(channels) for tick, channels in truth.items()}
         if truth is not None
         else None,

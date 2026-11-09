@@ -38,12 +38,27 @@ export interface Row {
   channels: Decision[];
 }
 export type Metrics = Record<string, number | null>;
+export interface Episode {
+  id: string;
+  channel: string;
+  mode: string;
+  start_tick: number;
+  end_tick: number;
+  observed_ticks: number;
+  reasons: string[];
+  peak_absolute_score: number;
+  start_boundary: string;
+  end_boundary: string;
+  left_censored: boolean;
+  right_censored: boolean;
+}
 export interface Run {
   id: string;
   scenario: string;
   settings: Settings;
   observations: Frame[];
   rows: Row[];
+  episodes: Episode[];
   truth: Record<string, string[]> | null;
   model: Record<string, { center: number; scale: number }[]>;
   metrics: Metrics;
