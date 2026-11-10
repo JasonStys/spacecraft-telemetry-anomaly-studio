@@ -27,7 +27,7 @@ This is a teaching/portfolio application using invented telemetry indices and lo
 
 ## Try the app
 
-Download the matching Windows/Linux/macOS ZIP from [Releases](https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/releases), verify its SHA-256, extract the **whole folder**, and launch `TelemetryAnomalyStudio` (`.exe` on Windows). It opens the local browser UI without requiring Python, Node, an account, cloud access or administrator rights. Ctrl+C stops the console service. Builds are unsigned; do not disable OS protections. Desktop bundles target their tested runner OS/architecture, not every historical OS. Mobile browser layout is tested; no phone-native executable is supplied.
+Download the matching versioned portable archive from [Releases](https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/releases): Windows ZIP or Linux/macOS tar.gz for version 1.1.0 onward. Verify its SHA-256, extract the **whole folder**, and launch `TelemetryAnomalyStudio` (`.exe` on Windows). It opens the local browser UI without requiring Python, Node, an account, cloud access or administrator rights. Ctrl+C stops the console service. Builds are unsigned; do not disable OS protections. Desktop bundles target their tested runner OS/architecture, not every historical OS. Mobile browser layout is tested; no phone-native executable is supplied.
 
 For development: Python 3.12–3.14 and Node 24. Runtime analysis and serving use Python's standard library only.
 
@@ -90,3 +90,7 @@ See [validation](docs/VALIDATION.md) for observed results, not certification cla
 [User guide](docs/USER_GUIDE.md) · [Detector/model contract](docs/MODEL.md) · [Architecture/ADRs](docs/ARCHITECTURE.md) · [API/CSV](docs/API.md) · [Security](docs/SECURITY.md) · [Validation](docs/VALIDATION.md) · [Release/rollback](docs/RELEASE.md) · [References/notices](docs/THIRD_PARTY.md).
 
 Created and maintained by Jason Stys, MIT licensed. Open an issue with synthetic settings, the report ID and expected vs observed behavior; use the private reporting guidance for security concerns. Do not publish personal data, credentials or sensitive operational telemetry.
+
+## Current portable release preparation
+
+Version 1.1.0 includes the current practical workflow in Windows ZIP and Linux/macOS tar.gz portable folders, with OS/CPU/version labels and source-bound release metadata. Historical 1.0.0 downloads predate these improvements. These are unsigned portable applications, not installers; preserve the entire extracted folder and POSIX links. See [release notes](docs/releases/v1.1.0.md), [local validation](docs/reports/PORTABLE_REFRESH_20261109.md) and [release procedure](docs/RELEASE.md) for exact acceptance and publication boundaries.

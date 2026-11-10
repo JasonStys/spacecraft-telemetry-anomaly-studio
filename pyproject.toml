@@ -1,7 +1,7 @@
 # Jason Stys: stdlib runtime, bounded synthetic models and strict verification policy.
 [project]
 name = "spacecraft-telemetry-anomaly-studio"
-version = "1.0.0"
+version = "1.1.0"
 description = "Explainable context-aware anomaly detection and synthetic telemetry evidence by Jason Stys"
 requires-python = ">=3.12,<3.15"
 dependencies = []
@@ -24,3 +24,9 @@ show_missing = true
 strict = true
 python_version = "3.12"
 files = ["telemetry"]
+
+[tool.portable]
+package = "telemetry"
+executable = "TelemetryAnomalyStudio"
+title = "Spacecraft Telemetry Anomaly Studio"
+workflows = ["validate.yml", "codeql.yml"]

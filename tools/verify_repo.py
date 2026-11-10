@@ -29,7 +29,7 @@ SKIP = {
     "test-results",
     "playwright-report",
 }
-SOURCE_SUFFIXES = {".py", ".ts", ".css", ".html", ".sql", ".cpp", ".hpp"}
+SOURCE_SUFFIXES = {".mjs", ".py", ".ts", ".css", ".html", ".sql", ".cpp", ".hpp"}
 FILE_PURPOSES = {
     "docs/reports/benchmark.json": "Reviewed synthetic detector benchmark summaries and deterministic evidence hashes.",
     ".gitattributes": "Normalize source text to LF and preserve binary screenshot assets.",

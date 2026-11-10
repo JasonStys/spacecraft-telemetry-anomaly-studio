@@ -14,7 +14,7 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `docs/API.md` — # Local API, CSV and evidence
 - `docs/ARCHITECTURE.md` — # Architecture and decisions
 - `docs/MODEL.md` — # Detector and synthetic-data contract
-- `docs/RELEASE.md` — # Build, release and rollback
+- `docs/RELEASE.md` — # Release, operation and rollback
 - `docs/SECURITY.md` — # Security and privacy
 - `docs/THIRD_PARTY.md` — # References and distribution notices
 - `docs/TRIAGE.md` — # Review alert episodes
@@ -22,7 +22,9 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `docs/VALIDATION.md` — # Validation strategy and observed evidence
 - `docs/images/inspector.jpg` — Binary screenshot asset from local application validation
 - `docs/images/overview.jpg` — Binary screenshot asset from local application validation
+- `docs/releases/v1.1.0.md` — # Version 1.1.0 — Spacecraft Telemetry Anomaly Studio
 - `docs/reports/CI_BASELINE.md` — # First published CI evidence
+- `docs/reports/PORTABLE_REFRESH_20261109.md` — # Portable release refresh validation — 2026-11-09
 - `docs/reports/PRACTICAL_WORKFLOWS_20261109.md` — # Triage workflow validation — 2026-11-09
 - `docs/reports/benchmark.json` — Reviewed synthetic detector benchmark summaries and deterministic evidence hashes.
 - `examples/slow-drift.csv` — tick,mode,thermal,bus,load
@@ -40,6 +42,7 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `telemetry/__main__.py` — """Local website launcher and reproducible export CLI by Jason Stys.
 - `telemetry/detector.py` — """Causal robust limits, drift and flatline detection by Jason Stys.
 - `telemetry/engine.py` — """Synthetic fixtures, label-isolated analysis and honest metrics by Jason Stys.
+- `telemetry/package_info.py` — """Read bounded frozen-build identity by Jason Stys, never a user-profile configuration.
 - `telemetry/reports.py` — """Portable reports, canonical CSV inputs and local immutable SQL history by Jason Stys.
 - `telemetry/resources/history.sql` — -- Immutable local experiment history by Jason Stys. Tables/triggers: docs/CODE_INDEX.md.
 - `telemetry/server.py` — """Loopback-only, read-only HTTP application by Jason Stys; not an Internet server.
@@ -47,13 +50,21 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `tests/test_detector.py` — """Independent robust-statistic, causal and edge-case contracts by Jason Stys.
 - `tests/test_import.py` — """Bounded local numeric CSV, undefined imported metrics and parser fuzz tests by Jason Stys.
 - `tests/test_io.py` — """CLI, report, SQLite and actual loopback HTTP integration tests by Jason Stys.
+- `tests/test_package_info.py` — """Frozen/source identity and owned-instance guards by Jason Stys.
+- `tests/test_portable_archive.py` — """Real bounded archive/extraction fixtures by Jason Stys; no archive member is executed.
+- `tests/test_release_contract.py` — """Independent release/source/archive authorization cases by Jason Stys.
 - `tests/test_triage.py` — """Independent episode-boundary examples by Jason Stys.
 - `tests/ui.spec.ts` — /* Actual production browser tests by Jason Stys. Functions: ready, choose, inspect and test cases.
 - `tools/benchmark.py` — """Measured synthetic detector evaluation and cross-platform golden evidence by Jason Stys.
-- `tools/package_app.py` — """Build portable native bundles from reviewed source by Jason Stys.
-- `tools/prepare_release.py` — """Fail-closed draft release preparation by Jason Stys.
-- `tools/smoke_app.py` — """Actual frozen-executable export and loopback smoke test by Jason Stys.
-- `tools/upload_release.py` — """Upload only a freshly smoke-tested native bundle to its draft by Jason Stys.
+- `tools/legacy_smoke.py` — """Actual frozen-executable export and loopback smoke test by Jason Stys.
+- `tools/native_browser.mjs` — /**
+- `tools/native_feature_smoke.mjs` — /** Jason Stys — extracted telemetry analyst workflow and independent boundary/export oracles.
+- `tools/package_app.py` — """Build and verify versioned portable applications by Jason Stys.
+- `tools/portable_archive.py` — """Bounded portable archive creation and fresh extraction by Jason Stys.
+- `tools/prepare_release.py` — """Prepare only a new version/source-bound draft by Jason Stys.
+- `tools/release_contract.py` — """Version, source and immutable draft-release contracts by Jason Stys.
+- `tools/smoke_app.py` — """Actual extracted-executable CLI, HTTP and Chromium acceptance by Jason Stys.
+- `tools/upload_release.py` — """Upload one inspected source/version archive pair by Jason Stys.
 - `tools/verify_repo.py` — """Generate/check exact-line code and file inventories by Jason Stys.
 - `tsconfig.json` — Strict TypeScript contracts for browser, unit and end-user test code.
 - `vitest.config.ts` — /** Pure display-logic tests by Jason Stys; configuration inventory: docs/CODE_INDEX.md. */
