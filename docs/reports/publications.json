@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "project": "spacecraft-telemetry-anomaly-studio",
+  "author": "Jason Stys",
+  "editionDate": "2026-11-09",
+  "sourceBaseline": "616b8cc92be09622443e103cdc201ce1d0c16a55",
+  "sourceUrl": "https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/tree/616b8cc92be09622443e103cdc201ce1d0c16a55",
+  "functionalEvidenceBaseline": "616b8cc92be09622443e103cdc201ce1d0c16a55",
+  "evidenceObservedAt": "2026-11-10T05:25:40.628667+00:00",
+  "workflowEvidence": [
+    {
+      "conclusion": "success",
+      "databaseId": 42752178787,
+      "event": "push",
+      "headSha": "616b8cc92be09622443e103cdc201ce1d0c16a55",
+      "name": "CodeQL",
+      "status": "completed",
+      "url": "https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/actions/runs/42752178787"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 42752178601,
+      "event": "push",
+      "headSha": "616b8cc92be09622443e103cdc201ce1d0c16a55",
+      "name": "Validation",
+      "status": "completed",
+      "url": "https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/actions/runs/42752178601"
+    }
+  ],
+  "summary": "The released 1.1.0 portable app includes run-bound anomaly triage: inspect channel episodes with explicit recovery, gap, context and censored boundaries, add human notes, and download the review tied to its originating run.",
+  "rationale": "The original label-isolated detector and metrics remain unchanged. An actual extracted-app analyst journey verifies a known spike, annotation export and note reset between analyses; independently restoring the previous version field reproduced every old benchmark hash before version-only IDs were refreshed. This makes the downloadable workflow match the practical source feature without claiming operational anomaly assurance.",
+  "limitations": [
+    "Synthetic telemetry and bounded rule-based detector evidence; no live spacecraft or hardware validation.",
+    "Human notes are detached local downloads rather than server-persisted multi-user reviews.",
+    "Unsigned desktop portable folders, not system installers or clean-machine proof. Three-OS extracted-native checks drive an owned URL; default OS browser opening remains manual."
+  ],
+  "documents": [
+    {
+      "filename": "project-guide.docx",
+      "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "bytes": 105884,
+      "sha256": "3cb445410a6035b564385cd49a4e2bebc5bf2897658cabb5f2680d8fdffe9d7e",
+      "sourceBaseline": "616b8cc92be09622443e103cdc201ce1d0c16a55",
+      "visualReview": {
+        "approved": true,
+        "method": "Every rendered page individually viewed at readable original resolution",
+        "pageCount": 4,
+        "renderedPageSha256": {
+          "page-1.png": "1bd0801fb4b4fcbd617417b03c0042d6e6f58f08b56df9ce3fe8fdcf3876bb8c",
+          "page-2.png": "9a8133da56ea47f6970c92101709715774cf6b0de95b453eeed31f7d89ff7491",
+          "page-3.png": "04ac5cb62d5bb949223d0569eb22f97c10b178be8244997512923cb0a3f09753",
+          "page-4.png": "93481c1a03e6be97cdf4983c4a1884aa3de39453e23cc49d52be6f87ad53f8d4"
+        }
+      }
+    },
+    {
+      "filename": "validation-review.docx",
+      "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "bytes": 41850,
+      "sha256": "6ef9f87f4d56b52801951c2f23c1d2f19ac2404b1192b82487d76bdb5d3545cb",
+      "sourceBaseline": "616b8cc92be09622443e103cdc201ce1d0c16a55",
+      "visualReview": {
+        "approved": true,
+        "method": "Every rendered page individually viewed at readable original resolution",
+        "pageCount": 3,
+        "renderedPageSha256": {
+          "page-1.png": "0272a87ab1137627e160175f226de9b933431026b4dde0059811b98a937aac20",
+          "page-2.png": "17d8238f503d8348d807509657d2ce82ed64efd3fd13cd3f997be9c489aec8d6",
+          "page-3.png": "2f83836192e729073ee886056520ea6d9d27a122aaa24ae36776623bc68f8763"
+        }
+      }
+    },
+    {
+      "filename": "validation-evidence.xlsx",
+      "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 7404,
+      "sha256": "71df134b061db10702612ad0207c2696621a66afd694308f3ad80423a2902908",
+      "sourceBaseline": "616b8cc92be09622443e103cdc201ce1d0c16a55",
+      "visualReview": {
+        "approved": true,
+        "tabsReviewed": ["Workflow evidence", "Test sources"],
+        "previewSha256": {
+          "workflow-evidence.png": "864ca9649b904959860ec89dc34c2948c777b068924351ed7449cad5342e6a90",
+          "test-sources.png": "4940ef8919323b83d7458e47b9f292ed46330caac83687b2d8fe66383602a9dd"
+        },
+        "tables": [
+          {
+            "name": "WorkflowEvidence",
+            "range": "A7:D9",
+            "autoFilter": true
+          },
+          {
+            "name": "TestSources",
+            "range": "A7:C18",
+            "autoFilter": true
+          }
+        ],
+        "formulaCount": 4,
+        "failureSensitivityReceiptPassed": true,
+        "formulaErrors": 0
+      }
+    }
+  ],
+  "scope": "Reviewed documentation editions of the cited source. Checksums identify bytes, not authorship. Historical measurements retain their own dates; integration CI must be checked separately."
+}
