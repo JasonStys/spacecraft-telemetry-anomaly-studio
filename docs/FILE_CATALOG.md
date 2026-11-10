@@ -48,6 +48,7 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `telemetry/server.py` — """Loopback-only, read-only HTTP application by Jason Stys; not an Internet server.
 - `telemetry/triage.py` — """Run-derived alert episode boundaries by Jason Stys.
 - `tests/test_detector.py` — """Independent robust-statistic, causal and edge-case contracts by Jason Stys.
+- `tests/test_draft_lookup.py` — """Independent real-shape draft API contract fixtures by Jason Stys.
 - `tests/test_import.py` — """Bounded local numeric CSV, undefined imported metrics and parser fuzz tests by Jason Stys.
 - `tests/test_io.py` — """CLI, report, SQLite and actual loopback HTTP integration tests by Jason Stys.
 - `tests/test_package_info.py` — """Frozen/source identity and owned-instance guards by Jason Stys.
@@ -56,6 +57,7 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `tests/test_triage.py` — """Independent episode-boundary examples by Jason Stys.
 - `tests/ui.spec.ts` — /* Actual production browser tests by Jason Stys. Functions: ready, choose, inspect and test cases.
 - `tools/benchmark.py` — """Measured synthetic detector evaluation and cross-platform golden evidence by Jason Stys.
+- `tools/draft_lookup.py` — """Bounded authenticated draft lookup by Jason Stys.
 - `tools/legacy_smoke.py` — """Actual frozen-executable export and loopback smoke test by Jason Stys.
 - `tools/native_browser.mjs` — /**
 - `tools/native_feature_smoke.mjs` — /** Jason Stys — extracted telemetry analyst workflow and independent boundary/export oracles.
