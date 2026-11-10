@@ -20,6 +20,7 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `docs/TRIAGE.md` — # Review alert episodes
 - `docs/USER_GUIDE.md` — # User guide
 - `docs/VALIDATION.md` — # Validation strategy and observed evidence
+- `docs/handbook.md` — # Spacecraft Telemetry Anomaly Studio handbook
 - `docs/images/inspector.jpg` — Binary screenshot asset from local application validation
 - `docs/images/overview.jpg` — Binary screenshot asset from local application validation
 - `docs/releases/v1.1.0.md` — # Version 1.1.0 — Spacecraft Telemetry Anomaly Studio
@@ -27,6 +28,11 @@ Every tracked-intent file; dependencies/private outputs are excluded.
 - `docs/reports/PORTABLE_REFRESH_20261109.md` — # Portable release refresh validation — 2026-11-09
 - `docs/reports/PRACTICAL_WORKFLOWS_20261109.md` — # Triage workflow validation — 2026-11-09
 - `docs/reports/benchmark.json` — Reviewed synthetic detector benchmark summaries and deterministic evidence hashes.
+- `docs/reports/documentation-refresh-2026-11-09.md` — # Documentation refresh — 2026-11-09
+- `docs/reports/project-guide.docx` — Reviewed Word project guide bound to the documented source revision.
+- `docs/reports/publications.json` — Exact Office publication byte identities, approved page/tab scopes and immutable source baselines.
+- `docs/reports/validation-evidence.xlsx` — Reviewed Excel workflow and test-source Tables with recalculated outcome formulas.
+- `docs/reports/validation-review.docx` — Reviewed Word validation evidence and explicit test/analysis limitations.
 - `examples/slow-drift.csv` — tick,mode,thermal,bus,load
 - `launcher.py` — """Portable application entry point by Jason Stys; main and argv: docs/CODE_INDEX.md.
 - `licenses/PYTHON.txt` — A. HISTORY OF THE SOFTWARE
