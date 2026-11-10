@@ -14,6 +14,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
+from telemetry import __version__
 from telemetry.detector import CHANNELS, MODES, TRAINING, Detector, Frame, fit, validate_frames
 from telemetry.triage import episodes
 
@@ -216,7 +217,7 @@ def analyze(
         "comparison": metrics(comparison, truth),
         "provenance": {
             "author": "Jason Stys",
-            "version": "1.0.0",
+            "version": __version__,
             "algorithm": "median-MAD + causal EWMA + six-repeat flatline",
             "clock": "logical ticks",
             "training_ticks": [0, 79],
