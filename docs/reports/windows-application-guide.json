@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "repository": "spacecraft-telemetry-anomaly-studio",
+  "runtimeVersion": "1.1.0",
+  "runtimeSource": "616b8cc92be09622443e103cdc201ce1d0c16a55",
+  "createdAt": "2026-11-10T23:55:00.930Z",
+  "author": "Jason Stys",
+  "document": "windows-application-guide.docx",
+  "sha256": "4636c5657545a6cbf6e6d9fabe57a6d3427520175eb15c01a26644c61410934a",
+  "screenshots": [
+    {
+      "file": "01-spike-human-review.png",
+      "sha256": "78b328ba78edc3ee85ac92d1b98866e08d771895b74cef728b152d1d5a2bed7d",
+      "width": 1072,
+      "height": 670,
+      "caption": "Actual installed application showing synthetic spike human triage. Captured during the accepted native user journey with prepared synthetic inputs."
+    },
+    {
+      "file": "02-partial-dropout-gap.png",
+      "sha256": "5cba2d0dd81a6ea16b035cbb47ddaf098e4bba085a04dc87749cdf4f4604108a",
+      "width": 1072,
+      "height": 681,
+      "caption": "Actual installed application showing partial missing telemetry. Captured during the accepted native user journey with prepared synthetic inputs."
+    }
+  ],
+  "snippets": [
+    {
+      "file": "telemetry/triage.py",
+      "first": 25,
+      "last": 38,
+      "sha256": "2daf0f066670e9978ae8f852e85acc5a1ed8e4a9d72585a6ed5aad131f233f1b",
+      "url": "https://github.com/JasonStys/spacecraft-telemetry-anomaly-studio/blob/616b8cc92be09622443e103cdc201ce1d0c16a55/telemetry/triage.py#L25"
+    }
+  ],
+  "observedTests": [
+    {
+      "name": "Published package",
+      "observed": "Exact public release, provider/sidecar hashes and installed resources verified; installed bytes unchanged.",
+      "result": "Passed"
+    },
+    {
+      "name": "Actual native core",
+      "observed": "The existing packaged CLI/API and native feature acceptance helper passed on the installed executable.",
+      "result": "Passed"
+    },
+    {
+      "name": "Scenario evidence",
+      "observed": "The spike episode was 120 to 120 with a run-bound uncertain note. Twelve missing bus readings split that observation path while the thermal channel remained observable.",
+      "result": "Passed"
+    },
+    {
+      "name": "UI and cleanup",
+      "observed": "Actual compiled-application browser journey passed. Both images were individually inspected; cleanup left no owned child process.",
+      "result": "Passed"
+    }
+  ],
+  "visualReview": {
+    "approved": true,
+    "pageCount": 4,
+    "reviewedAt": "2026-11-11T01:39:09.592843+00:00",
+    "reviewers": [
+      "root"
+    ],
+    "method": "Every page individually viewed at original resolution; unchanged previously reviewed pages retained only after exact SHA-256 match.",
+    "pageSHA256": {
+      "1": "313d92f20aa37b2fa79ab880379ff9ff5a69c7d2fca923e02cceef8e14fc1333",
+      "2": "130b47c6b446309415fe138a3575648654a768116ab556e6da0cb705b229b346",
+      "3": "41a77d7e2b05e2411a7805bf56fb1e7fadc9a144914f7354be61e6642b1c929c",
+      "4": "51cb01d514069c3e53ee5fa807c1810a43882351c07518d3b0aedddd4259e14b"
+    },
+    "ooxmlSchema": "passed",
+    "issues": []
+  }
+}
